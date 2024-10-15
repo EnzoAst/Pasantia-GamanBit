@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2137620457322669136}
   - component: {fileID: 8509904721583877262}
   - component: {fileID: 962581971010470700}
-  - component: {fileID: 6766945468330761059}
   - component: {fileID: 2700603720356728934}
   m_Layer: 0
   m_Name: Player
@@ -173,23 +172,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9463b4ff730e8d249a170fae1d6d4f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vidas: 3
   jumpForce: 300
-  moveForce: 5
---- !u!114 &6766945468330761059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1094818796563206221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 106fc1715bfe87f40ae4305c90a068d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sun: {fileID: 0}
-  destructionDistance: 2.5
-  explosionEffect: {fileID: 9163842254569548763, guid: 6d15eb92a997141259e4d43b70fa3ea9, type: 3}
+  airJumpForceMultiplier: 0.5
+  planetRadiusOffset: 0.5
+  puntosTexto: {fileID: 0}
+  corazones: []
 --- !u!114 &2700603720356728934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,6 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f0b2dc4da6bdb45996e5eb0d6413f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  galaxy: {fileID: 0}
+  galaxyOPortal: {fileID: 0}
   succionDistance: 1
   explosionEffect: {fileID: 9163842254569548763, guid: 3eed43ae6a7284ee4bf43fb2fec8342b, type: 3}
+  nextLevel: Nivel2
